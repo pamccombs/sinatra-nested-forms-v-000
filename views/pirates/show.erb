@@ -1,4 +1,4 @@
-<h1>Pirates</h1>
+<h1>Pirate</h1>
 
 <div class="pirate">
   <h3>Name: <%= @pirate.name %></h3><br>
@@ -6,11 +6,16 @@
   <h4>Height: <%= @pirate.height %> inches</h4>
 </div><br>
 
-<h1>Ships</h1>
-<% @ships.each do |ship| %>
-  <div class="ship">
-    <p>Name: <%= ship.name %></p><br>
-    <p>Type: <%= ship.type %></p><br>
-    <p>Booty: <%= ship.booty %></p>
-  </div><br>
-<% end %>
+<h1>Ship 1</h1>
+<div class="ship_1">
+    <p>Name: <%= ship.name[0] %></p><br>
+    <p>Type: <%= ship.type[0] %></p><br>
+    <p>Booty: <%= ship.booty[0] %></p>
+</div><br>
+
+<h1>Ship 2</h1>
+<div class="ship_2">
+    <p>Name: <%= ship.name[1] %></p><br>
+    <p>Type: <%= ship.type[1] %></p><br>
+    <p>Booty: <%= ship.booty[1] %></p>
+</div><br>
